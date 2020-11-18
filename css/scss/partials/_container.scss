@@ -1,0 +1,39 @@
+// Container Breakpoints
+$breakpoint: (
+    "sm": 576px, 
+    "md": 768px, 
+    "lg": 992px, 
+    "xl": 1200px
+);
+
+// Default container has a width of 12 units
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+
+    @each $width, $px in $breakpoint {
+        // responsive container by breakpoint
+        &-#{$width} {
+            @extend .container;
+            width: 100%;
+            max-width: #{$px};
+        }
+
+        // responsive container with selected # of units in grid
+        @for $i from 1 through 12 {
+            &-#{$width}-#{$i} {
+                @extend .container;
+                @extend .container-#{$width};
+                grid-template-columns: repeat(#{$i}, 1fr);
+            }
+
+            // Default container with selected # of units
+            &-#{$i} {
+                @extend .container;
+                grid-template-columns: repeat(#{$i}, 1fr);
+            }
+        }
+    }
+}
+
