@@ -1,11 +1,11 @@
 @use "media-queries";
 
 // Container Breakpoints
-$breakpoint: (
-    "sm": 576px, 
-    "md": 768px, 
-    "lg": 992px, 
-    "xl": 1200px
+$container-max-widths: (
+  "sm": 540px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1140px
 );
 
 // Default container has a width of 12 units
@@ -15,7 +15,7 @@ $breakpoint: (
     gap: 20px;
     margin: auto;
 
-    @each $width, $px in $breakpoint {
+    @each $width, $px in $container-max-widths {
         // responsive container by breakpoint
         &-#{$width} {
             @extend .container;
