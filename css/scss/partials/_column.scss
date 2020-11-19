@@ -1,10 +1,51 @@
+// Column Breakpoints
+$breakpoint: (
+    "sm": 576px, 
+    "md": 768px, 
+    "lg": 992px, 
+    "xl": 1200px
+);
+
+// TEST STYLING
+@mixin border {
+    border: 3px solid orangered;
+}
+[class|=col] {
+    @include border;
+}
+
 // Default column takes up 1/4 of the grid
 .col {
     grid-column: span 3;
 
     @for $i from 1 through 12 {
+        //  Column with selected width
         &-#{$i} {
             grid-column: span #{$i};
+        }
+
+        // Columns with breakpoints & selected width
+        @each $width, $px in $breakpoint {
+            &-#{$width}-#{$i} {
+                @media (max-width: #{$px}) {
+                // span full width upon hitting breakpoint
+                    grid-column: 1 / -1;
+                }
+                // span chosen amount otherwise
+                grid-column: span #{$i};
+            }
+        }
+    }
+
+    @each $width, $px in $breakpoint {
+        // Columns with breakpoints & default width
+        &-#{$width} {
+            @media (max-width: #{$px}) {
+            // span full width upon hitting breakpoint 
+                grid-column: 1 / -1;
+            }
+            // span chosen amount otherwise
+            grid-column: span 3;
         }
     }
 }
