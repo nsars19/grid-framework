@@ -8,6 +8,20 @@ $breakpoint: (
     "xl": 1200px
 );
 
+
+// TEST STYLING //
+[class|="container"] {
+    margin: 10px;
+    border: 2px solid black;
+    height: 60px;
+    place-items: center;
+    
+    .t {
+        border: 2px solid goldenrod;
+        height: 20px;
+    }
+}
+
 // Default container has a width of 12 units
 .container {
     display: grid;
@@ -21,23 +35,6 @@ $breakpoint: (
             @extend .container;
             @include media-queries.min-width($px);
             max-width: $px;
-        }
-
-        // responsive container with selected # of units in grid
-        @for $i from 1 through 12 {
-            &-#{$width}-#{$i} {
-                @extend .container;
-                @extend .container-#{$width};
-                grid-template-columns: repeat(#{$i}, 1fr);
-            }
-        }
-    }
-
-    // Default container with selected # of units
-    @for $i from 1 through 12 {
-        &-#{$i} {
-            @extend .container;
-            grid-template-columns: repeat(#{$i}, 1fr);
         }
     }
 }
