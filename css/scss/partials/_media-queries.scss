@@ -1,0 +1,11 @@
+@mixin min-width($px) {
+    @media (min-width: $px) {
+        width: 100%;
+    }
+}
+
+@mixin max-width($px) {
+    @media (max-width: #{$px}) {
+        width: 100%;
+    }
+}
