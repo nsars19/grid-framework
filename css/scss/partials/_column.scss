@@ -6,14 +6,6 @@ $breakpoint: (
     "xl": 1200px
 );
 
-// TEST STYLING
-@mixin border {
-    border: 3px solid orangered;
-}
-[class|=col] {
-    @include border;
-}
-
 // Default column takes up 1/4 of the grid
 .col {
     grid-column: span 3;

@@ -8,20 +8,6 @@ $breakpoint: (
     "xl": 1200px
 );
 
-
-// TEST STYLING //
-[class|="container"] {
-    margin: 10px;
-    border: 2px solid black;
-    height: 60px;
-    place-items: center;
-    
-    .t {
-        border: 2px solid goldenrod;
-        height: 20px;
-    }
-}
-
 // Default container has a width of 12 units
 .container {
     display: grid;
