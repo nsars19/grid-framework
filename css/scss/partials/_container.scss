@@ -1,3 +1,5 @@
+@use "media-queries";
+
 // Container Breakpoints
 $breakpoint: (
     "sm": 576px, 
@@ -11,12 +13,14 @@ $breakpoint: (
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
+    margin: auto;
 
     @each $width, $px in $breakpoint {
         // responsive container by breakpoint
         &-#{$width} {
             @extend .container;
-            max-width: #{$px};
+            @include media-queries.min-width($px);
+            max-width: $px;
         }
 
         // responsive container with selected # of units in grid
