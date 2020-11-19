@@ -1,5 +1,6 @@
 // Column Breakpoints
 $breakpoint: (
+    "xs": 360px,
     "sm": 576px, 
     "md": 768px, 
     "lg": 992px, 
@@ -10,34 +11,40 @@ $breakpoint: (
 .col {
     grid-column: span 3;
 
-    @for $i from 1 through 12 {
-        //  Column with selected width
-        &-#{$i} {
-            grid-column: span #{$i};
+    @each $width, $px in $breakpoint {
+        @media (min-width: #{$px}) {
+            &-#{$width} {
+            // span default amount if above breakpoint 
+                grid-column: span 3;
+            }
+        }
+        @media (max-width: #{$px - .2}) {
+            &-#{$width} {
+            // span full width if below breakpoint
+                grid-column: 1 / -1;
+            }
         }
 
-        // Columns with breakpoints & selected width
-        @each $width, $px in $breakpoint {
-            &-#{$width}-#{$i} {
-                @media (max-width: #{$px}) {
-                // span full width upon hitting breakpoint
+        @for $i from 1 through 12 {
+            @media (min-width: #{$px}) {
+                &-#{$width}-#{$i} {
+                // span selected amount if above breakpoint
+                    grid-column: span #{$i};
+                }    
+            }
+            @media (max-width: #{$px - .2}) {
+                &-#{$width}-#{$i} {
+                // span full width if below breakpoint
                     grid-column: 1 / -1;
                 }
-                // span chosen amount otherwise
-                grid-column: span #{$i};
             }
         }
     }
 
-    @each $width, $px in $breakpoint {
-        // Columns with breakpoints & default width
-        &-#{$width} {
-            @media (max-width: #{$px}) {
-            // span full width upon hitting breakpoint 
-                grid-column: 1 / -1;
-            }
-            // span chosen amount otherwise
-            grid-column: span 3;
+    // span selected amount
+    @for $i from 1 through 12 {
+        &-#{$i} {
+            grid-column: span #{$i};
         }
     }
 }
