@@ -1,0 +1,10 @@
+// Default column takes up 1/4 of the grid
+.column {
+    grid-column: span 3;
+
+    @for $i from 1 through 12 {
+        &-#{$i} {
+            grid-column: span #{$i};
+        }
+    }
+}
