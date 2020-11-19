@@ -2,9 +2,15 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
+  margin: auto;
 }
 .container-sm, .container-sm-12, .container-sm-11, .container-sm-10, .container-sm-9, .container-sm-8, .container-sm-7, .container-sm-6, .container-sm-5, .container-sm-4, .container-sm-3, .container-sm-2, .container-sm-1 {
   max-width: 576px;
+}
+@media (min-width: 576px) {
+  .container-sm, .container-sm-12, .container-sm-11, .container-sm-10, .container-sm-9, .container-sm-8, .container-sm-7, .container-sm-6, .container-sm-5, .container-sm-4, .container-sm-3, .container-sm-2, .container-sm-1 {
+    width: 100%;
+  }
 }
 .container-sm-1 {
   grid-template-columns: repeat(1, 1fr);
@@ -45,6 +51,11 @@
 .container-md, .container-md-12, .container-md-11, .container-md-10, .container-md-9, .container-md-8, .container-md-7, .container-md-6, .container-md-5, .container-md-4, .container-md-3, .container-md-2, .container-md-1 {
   max-width: 768px;
 }
+@media (min-width: 768px) {
+  .container-md, .container-md-12, .container-md-11, .container-md-10, .container-md-9, .container-md-8, .container-md-7, .container-md-6, .container-md-5, .container-md-4, .container-md-3, .container-md-2, .container-md-1 {
+    width: 100%;
+  }
+}
 .container-md-1 {
   grid-template-columns: repeat(1, 1fr);
 }
@@ -84,6 +95,11 @@
 .container-lg, .container-lg-12, .container-lg-11, .container-lg-10, .container-lg-9, .container-lg-8, .container-lg-7, .container-lg-6, .container-lg-5, .container-lg-4, .container-lg-3, .container-lg-2, .container-lg-1 {
   max-width: 992px;
 }
+@media (min-width: 992px) {
+  .container-lg, .container-lg-12, .container-lg-11, .container-lg-10, .container-lg-9, .container-lg-8, .container-lg-7, .container-lg-6, .container-lg-5, .container-lg-4, .container-lg-3, .container-lg-2, .container-lg-1 {
+    width: 100%;
+  }
+}
 .container-lg-1 {
   grid-template-columns: repeat(1, 1fr);
 }
@@ -122,6 +138,11 @@
 }
 .container-xl, .container-xl-12, .container-xl-11, .container-xl-10, .container-xl-9, .container-xl-8, .container-xl-7, .container-xl-6, .container-xl-5, .container-xl-4, .container-xl-3, .container-xl-2, .container-xl-1 {
   max-width: 1200px;
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-xl-12, .container-xl-11, .container-xl-10, .container-xl-9, .container-xl-8, .container-xl-7, .container-xl-6, .container-xl-5, .container-xl-4, .container-xl-3, .container-xl-2, .container-xl-1 {
+    width: 100%;
+  }
 }
 .container-xl-1 {
   grid-template-columns: repeat(1, 1fr);
@@ -194,6 +215,46 @@
 }
 .container-12 {
   grid-template-columns: repeat(12, 1fr);
+}
+
+.column {
+  grid-column: span 3;
+}
+.column-1 {
+  grid-column: span 1;
+}
+.column-2 {
+  grid-column: span 2;
+}
+.column-3 {
+  grid-column: span 3;
+}
+.column-4 {
+  grid-column: span 4;
+}
+.column-5 {
+  grid-column: span 5;
+}
+.column-6 {
+  grid-column: span 6;
+}
+.column-7 {
+  grid-column: span 7;
+}
+.column-8 {
+  grid-column: span 8;
+}
+.column-9 {
+  grid-column: span 9;
+}
+.column-10 {
+  grid-column: span 10;
+}
+.column-11 {
+  grid-column: span 11;
+}
+.column-12 {
+  grid-column: span 12;
 }
 
 /*# sourceMappingURL=main.css.map */
