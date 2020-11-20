@@ -47,10 +47,6 @@
   }
 }
 
-[class|=col] {
-  border: 3px solid orangered;
-}
-
 .col {
   grid-column: span 3;
 }
@@ -739,6 +735,298 @@
 }
 .col-12 {
   grid-column: span 12;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.jc-s {
+  justify-content: start;
+}
+
+.ac-s {
+  align-content: start;
+}
+
+.ji-s {
+  justify-items: start;
+}
+
+.ai-s {
+  align-items: start;
+}
+
+.pc-s {
+  place-content: start;
+}
+
+.pi-s {
+  place-items: start;
+}
+
+.js-s {
+  justify-self: start;
+}
+
+.as-s {
+  align-self: start;
+}
+
+.ps-s {
+  place-self: start;
+}
+
+.jc-e {
+  justify-content: end;
+}
+
+.ac-e {
+  align-content: end;
+}
+
+.ji-e {
+  justify-items: end;
+}
+
+.ai-e {
+  align-items: end;
+}
+
+.pc-e {
+  place-content: end;
+}
+
+.pi-e {
+  place-items: end;
+}
+
+.js-e {
+  justify-self: end;
+}
+
+.as-e {
+  align-self: end;
+}
+
+.ps-e {
+  place-self: end;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.ac-c {
+  align-content: center;
+}
+
+.ji-c {
+  justify-items: center;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.pc-c {
+  place-content: center;
+}
+
+.pi-c {
+  place-items: center;
+}
+
+.js-c {
+  justify-self: center;
+}
+
+.as-c {
+  align-self: center;
+}
+
+.ps-c {
+  place-self: center;
+}
+
+.jc-str {
+  justify-content: stretch;
+}
+
+.ac-str {
+  align-content: stretch;
+}
+
+.ji-str {
+  justify-items: stretch;
+}
+
+.ai-str {
+  align-items: stretch;
+}
+
+.pc-str {
+  place-content: stretch;
+}
+
+.pi-str {
+  place-items: stretch;
+}
+
+.js-str {
+  justify-self: stretch;
+}
+
+.as-str {
+  align-self: stretch;
+}
+
+.ps-str {
+  place-self: stretch;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.ac-sa {
+  align-content: space-around;
+}
+
+.ji-sa {
+  justify-items: space-around;
+}
+
+.ai-sa {
+  align-items: space-around;
+}
+
+.pc-sa {
+  place-content: space-around;
+}
+
+.pi-sa {
+  place-items: space-around;
+}
+
+.js-sa {
+  justify-self: space-around;
+}
+
+.as-sa {
+  align-self: space-around;
+}
+
+.ps-sa {
+  place-self: space-around;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ac-sb {
+  align-content: space-between;
+}
+
+.ji-sb {
+  justify-items: space-between;
+}
+
+.ai-sb {
+  align-items: space-between;
+}
+
+.pc-sb {
+  place-content: space-between;
+}
+
+.pi-sb {
+  place-items: space-between;
+}
+
+.js-sb {
+  justify-self: space-between;
+}
+
+.as-sb {
+  align-self: space-between;
+}
+
+.ps-sb {
+  place-self: space-between;
+}
+
+.no-gap {
+  gap: 0;
+}
+
+.border-top {
+  border-top: 1px solid #aaa;
+}
+
+.border-right {
+  border-right: 1px solid #aaa;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #aaa;
+}
+
+.border-left {
+  border-left: 1px solid #aaa;
+}
+
+.border {
+  border: 1px solid #aaa;
+}
+
+.p-static {
+  position: static;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-fixed {
+  position: fixed;
+}
+
+.p-sticky {
+  position: sticky;
 }
 
 /*# sourceMappingURL=main.css.map */
