@@ -11,8 +11,8 @@ Containers can span the full width of the page, or be capped at a specific break
 
 Available Containers:
 <table>
-  <code>.container</code>
-  <code>.container-sm</code>
-  <code>.container-md</code>
-  <code>.container-lg</code>
+  <code>.container</code><br>
+  <code>.container-sm</code><br>
+  <code>.container-md</code><br>
+  <code>.container-lg</code><br>
 </table>  
