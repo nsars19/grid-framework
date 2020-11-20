@@ -25,17 +25,34 @@ Available Containers:
   </tr>
   <tr>
     <td>
-      <code>.container-sm</code><br>
+      <code>.container-sm</code>
     </td>
+    <td>
+      540px
+    </td>  
   </tr>
    <tr>
     <td>
-      <code>.container-md</code><br>
+      <code>.container-md</code>
     </td>
+    <td>
+      720px
+    </td>  
   </tr>
    <tr>
     <td>
-      <code>.container-lg</code><br>
+      <code>.container-lg</code>
     </td>
+    <td>
+      960px
+    </td>  
+  </tr>
+  <tr>
+    <td>
+      <code>.container-xl</code>
+    </td>
+    <td>
+      1140px
+    </td>  
   </tr>
 </table>  
