@@ -1,0 +1,84 @@
+// Display Settings
+$displays: none inline block inline-block flex grid;
+
+@each $display in $displays {
+    .d-#{$display} {
+        display: $display;
+    }
+}
+
+// Floats
+$float: left right;
+
+@each $direction in $float {
+    .float-#{$direction} {
+        float: $direction;
+    }
+}
+
+// Centering
+$values: (
+    s: start, 
+    e: end, 
+    c: center,
+    str: stretch,
+    sa: space-around,
+    sb: space-between
+);
+
+@each $key, $value in $values {
+    .jc-#{$key} {
+        justify-content: $value;
+    }
+    .ac-#{$key} {
+        align-content: $value;
+    }
+    .ji-#{$key} {
+        justify-items: $value;
+    }
+    .ai-#{$key} {
+        align-items: $value;
+    }
+    .pc-#{$key} {
+        place-content: $value;
+    }
+    .pi-#{$key} {
+        place-items: $value;
+    }
+    .js-#{$key} {
+        justify-self: $value;
+    }
+    .as-#{$key} {
+        align-self: $value;
+    }
+    .ps-#{$key} {
+        place-self: $value;
+    }
+}
+
+// Remove Gutter
+.no-gap {
+    gap: 0;
+}
+
+// Border
+$borders: top right bottom left;
+
+@each $side in $borders {
+    .border-#{$side} {
+        border-#{$side}: 1px solid #aaa;
+    }
+}
+
+.border {
+    border: 1px solid #aaa
+}
+
+// Position
+$positions: static relative absolute fixed sticky;
+
+@each $position in $positions {
+    .p-#{$position} {
+        position: $position;
+    }
+}
