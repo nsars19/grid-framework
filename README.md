@@ -67,4 +67,4 @@ Columns can be created with <code>.col</code>
 To specify how many cells of the row to span any number from 1 through 12 can be used with <code>.col-*</code>
 Breakpoints can also be added to columns. When the screen size reaches a breakpoint the column will change width to 100%.
 Breakpoints can be used alone: <code>.col-xs</code>, <code>.col-sm</code>, <code>.col-md</code>, <code>.col-lg</code>, <code>.col-xl</code>,
-or with a given grid-column width with <code>.col-md-*</code>
+or with a given grid-column width with <code>.col-md-\*</code>
