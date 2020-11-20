@@ -70,7 +70,7 @@ Breakpoints can be used alone: <code>.col-xs</code>, <code>.col-sm</code>, <code
 or with a given grid-column width with <code>.col-md-\*</code>, which will make a column * units wide until the breakpoint.
 
 
-<h4>Several utility classes are also provided<h4>
+<h4>Several utility classes are also provided</h4>
 
 To change the display of an element <code>.d-*</code> can be used with any display value
 
