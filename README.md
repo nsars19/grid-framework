@@ -67,4 +67,32 @@ Columns can be created with <code>.col</code>
 To specify how many cells of the row to span any number from 1 through 12 can be used with <code>.col-*</code>
 Breakpoints can also be added to columns. When the screen size reaches a breakpoint the column will change width to 100%.
 Breakpoints can be used alone: <code>.col-xs</code>, <code>.col-sm</code>, <code>.col-md</code>, <code>.col-lg</code>, <code>.col-xl</code>,
-or with a given grid-column width with <code>.col-md-\*</code>
+or with a given grid-column width with <code>.col-md-\*</code>, which will make a column * units wide until the breakpoint.
+
+
+Several utility classes are also provided.
+
+To change the display of an element <code>.d-*</code> can be used with any display value
+
+To change the position of an element <code>.p-*</code> can be used with any position value
+
+To float an element <code>.float-left</code> or <code>.float-right</code>
+
+To remove the default 20px gap <code>.no-gap</code>
+
+To add a full border to elements <code>.border</code>
+
+to add border by side use <code>.border-*</code> with either top, bottom, left, or right
+
+To place items:
+  justify-content: <code>jc-*</code>
+  align-content: <code>ac-*</code>
+  justify-items: <code>ji-*</code>
+  align-items: <code>ai-*</code>
+  place-content: <code>pc-*</code>
+  place-items: <code>pi-*</code>
+  justify-self: <code>js-*</code>
+  align-self: <code>as-*</code>
+  place-self: <code>ps-*</code>
+
+Each of the placement classes is used with their respective values
