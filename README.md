@@ -61,7 +61,7 @@ In order to place content inside of the grid columns must be nested within the <
 Columns default to 3 cells wide, but can be sized from 1 through 12 cells. Having more than 12 cells per row will implicitly create
 new rows.
 
-How To Use Columns:
+<h4>How To Use Columns</h4>
 
 Columns can be created with <code>.col</code>
 To specify how many cells of the row to span any number from 1 through 12 can be used with <code>.col-*</code>
