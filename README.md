@@ -86,15 +86,15 @@ to add border by side use <code>.border-*</code> with either top, bottom, left, 
 
 To place items:
   <ul>
-    <li>justify-content: <code>jc-\*</code></li>
-    <li>align-content: <code>ac-\*</code></li>
-    <li>justify-items: <code>ji-\*</code></li>
-    <li>align-items: <code>ai-\*</code></li>
-    <li>place-content: <code>pc-\*</code></li>
-    <li>place-items: <code>pi-\*</code></li>
-    <li>justify-self: <code>js-\*</code></li>
-    <li>align-self: <code>as-\*</code></li>
-    <li>place-self: <code>ps-\*</code></li>
+    <li>justify-content: <code>jc-*</code></li>
+    <li>align-content: <code>ac-*</code></li>
+    <li>justify-items: <code>ji-*</code></li>
+    <li>align-items: <code>ai-*</code></li>
+    <li>place-content: <code>pc-*</code></li>
+    <li>place-items: <code>pi-*</code></li>
+    <li>justify-self: <code>js-*</code></li>
+    <li>align-self: <code>as-*</code></li>
+    <li>place-self: <code>ps-*</code></li>
   </ul>
 
 Each of the placement classes is used with their respective values
