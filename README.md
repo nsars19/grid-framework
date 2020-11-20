@@ -85,14 +85,16 @@ To add a full border to elements <code>.border</code>
 to add border by side use <code>.border-*</code> with either top, bottom, left, or right
 
 To place items:
-  justify-content: <code>jc-*</code>
-  align-content: <code>ac-*</code>
-  justify-items: <code>ji-*</code>
-  align-items: <code>ai-*</code>
-  place-content: <code>pc-*</code>
-  place-items: <code>pi-*</code>
-  justify-self: <code>js-*</code>
-  align-self: <code>as-*</code>
-  place-self: <code>ps-*</code>
+  <ul>
+    <li>justify-content: <code>jc-\*</code></li>
+    <li>align-content: <code>ac-\*</code></li>
+    <li>justify-items: <code>ji-\*</code></li>
+    <li>align-items: <code>ai-\*</code></li>
+    <li>place-content: <code>pc-\*</code></li>
+    <li>place-items: <code>pi-\*</code></li>
+    <li>justify-self: <code>js-\*</code></li>
+    <li>align-self: <code>as-\*</code></li>
+    <li>place-self: <code>ps-\*</code></li>
+  </ul>
 
 Each of the placement classes is used with their respective values
